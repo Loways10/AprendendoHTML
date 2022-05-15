@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="#" method="post" name="Cadastro.Usuario" target="_self" autocomplete="on">
+        <div class="container.formulario">
+            <div class="box-title"><h2>Cadastro</h2></div>
+            <div class="box-input">
+                <label for="input-id">ID</label><!--for pode-se usar como referencia para o ID-->
+                <input type="text" name="id" id="input-id" value="00001" size="4" disabled>
+            </div>
+            <div class="box-input">
+                <label for="input-nome">Nome</label><!--for pode-se usar como referencia para o ID-->
+                <input type="text" name="nome" id="input-nome" placeholder="Akio Hashimoto" autofocus >
+            </div>
+            <div class="box-input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="box-input">
+                <label for="">Senha</label>
+                <input type="password" name="pass" id="password" required><!--required força o preenchimento-->
+            </div>
+            <fieldset>
+                <legend>Endereço</legend>
+                    <div class="box-address">
+                        <label for="">CEP</label>
+                        <input type="text" name="cep" id="cep" placeholder="26113-470" maxlength="9" required>
+                        <!--maxlength limita a quantidade de caracteres-->
+                    </div>
+                    <div class="adress">
+                        <label for="">Estado</label>
+                        <select name="estado" id="estado">
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="sp">São Paulo</option>
+                        </select>
+                    </div>
+                    <div class="box.adress">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade" placeholder="Belford Roxo" required>
+                    </div>
+                    <div class="box.adress">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="bairro" id="bairro" placeholder="Das Graças">
+                    </div>
+                    <div class="box.adress">
+                        <label for="rua">Rua</label>
+                        <input type="text" name="rua" id="rua" placeholder="Rua Juruá Nunes do Nascimento" required>
+                        <label for="">Nº</label>
+                        <input type="number" name="numero" id="numero" placeholder="635" size="5" min="0">
+                        <!--size tamanho do campo, min numero minimo-->
+                    </div>
+                    <div class="box-adress">
+                        <label for="complemento">complemento</label>
+                        <input type="text" name="complemento" id="complemento" placeholder="Casa/Apto">
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Sexo</legend>
+                <div>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="sexo" id="masculino" value="m" checked><!-- checked = campo marcado-->
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" name="sexo" id="feminino" value="f">
+                    <label for="outro">Outro</label>
+                    <input type="radio" name="sexo" id="outro" value="o">
+                    <label for="nao-dizer">Prefiro não dizer</label>
+                    <input type="radio" name="sexo" id="nao-dizer" value="n">
+                </div>
+                <div>
+                    <h3>Cursos</h3>
+                    <label for="">HTML</label>
+                    <input type="checkbox" name="cursos" id="html" value="html" checked>
+                    <label for="">CSS</label>
+                    <input type="checkbox" name="cursos" id="css" value="css">
+                    <label for="">JS</label>
+                    <input type="checkbox" name="cursos" id="js" value="js">
+                </div>
+            </fieldset> 
+            <fieldset>
+                <div class="box.data">
+                    <label for="nasc">Nascimento</label>
+                    <input type="date" name="nasc" id="nasc" required>
+                </div>
+                <div class="box.data">
+                    <label for="agenda">Agendamento</label>
+                    <input type="datetime-local" name="agenda" id="agenda" required>
+                </div>
+                <div class="box.data">
+                    <label for="hora">Hora</label>
+                    <input type="time" name="hora" id="hora" required>
+                </div>
+                <div class="box.data">
+                    <label for="week">Semana</label>
+                    <input type="week" name="week" id="week" required>
+                </div>
+                <div class="box.data">
+                    <label for="mes">Mês</label>
+                    <input type="mes" name="mes" id="mes" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Outros</legend>
+                <div class="box-outros">
+                    <label for="cor">Cor</label>
+                    <input type="color" name="cor" id="cor" value="#ffffff">
+                </div>
+                <div class="box-outros">
+                    <label for="vol">Volume</label>
+                    <input type="range" name="vol" id="vol" value="25" max="100" min="0">
+                <div class="box-outros">
+                    <label for="url">URL</label>
+                    <input type="url" name="url" id="url" placeholder="www.instagram.com">
+                <div class="box-outros">
+                    <label for="search">Pesquisa</label>
+                    <input type="search" name="search" id="search" placeholder="buscar">
+                </div>
+                <div class="box-outros">
+                    <input type="file" name="arquivo" id="arquivo" accept="image/*" multiple>
+                </div>
+            </fieldset>      
+            <fieldset>
+                <legend>Texto</legend>
+                <div>
+                    <textarea name="texto" id="txt" cols="30" rows="10" wrap="soft"></textarea>
+                    <!--wrap é quebra de linha-->
+                </div>
+            </fieldset>     
+            <div class="Box-buttons">
+                <input type="submit" value="cadastrar">
+                <input type="reset" value="limpar">
+            </div>            
+        </div>
+        <input type="tel" name="telefone" id="tel" placeholder="99999-9999"></input>
+        <input type="password" name="password" id="password" placeholder="Senha"></input>
+        <input type="tel" name="telefone" id="tel" placeholder="99999-9999"></input>
+    </form>    
+</body>
+</html>

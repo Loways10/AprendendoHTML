@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+<body>
+    <!--Tabela simples, table criação de tabela, tr = table row(linha de tabela), th = table head(cabeça da Tabela), Table Data(Dado da Tabela)-->
+    <h1>Trabalhando com tabelas</h1>
+    <h2>Simples</h2>
+    <table>
+        <tr>
+            <th>Bayern de Munique</th>
+            <th>Real Madrid</th>
+            <th>Liverpool</th>
+        </tr>
+        <tr>
+            <td>04/05/2022</td>
+            <td>05/05/2022</td>
+            <td>06/05/2022</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>0</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th>Saldo</th>
+            <td><strong>6</strong></td>
+            <td><strong>9</strong></td>
+        </tr>
+    </table>
+    <h2>Tabela</h2>
+    <table>
+        <tr>
+            <th rowspan="2" colspan="2">Linha / Coluna</th><!--rowspan mescla linhas / colspan mescla colunas-->            
+            <th>Coluna</th>
+            <th>Coluna</th>
+            <th>Coluna</th>
+        </tr>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        <tr>
+            <td>Linha</td>
+            <td>1</td>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>Linha</td>
+            <td>2</td>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>Linha</td>
+            <td>3</td>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+    <h2>Tabela Completa</h2>
+    <caption><strong>10 Linguagens de programação mais usadas pelas empresas</strong></caption> <!--Titulo da Tabela-->
+    <table><!--Criação da Tabela-->
+        <thead><!--Cabeçalho da Tabela-->
+            <tr><!--Linha da Tabela-->
+                <th scope="col">Ranking</th> <!--Titulo da Tabela-->
+                <th scope="col">Linguagem</th> <!--Titulo da Tabela-->
+                <th scope="col">Ano de Criação</th> <!--Titulo da Tabela-->
+            </tr>
+        </thead>
+        <tbody><!--Corpo da Tabela-->
+            <tr>
+                <td>1</td><!--Dado da tabela-->
+                <td>Python</td><!--Dado da tabela-->
+                <td>1990</td><!--Dado da tabela-->
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>JavaScript (JS)</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Java</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>TypeScript</td>
+                <td>2012</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>GO</td>
+                <td>2009</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>C++</td>
+                <td>1980</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Ruby</td>
+                <td>1995</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>PHP</td>
+                <td>1994</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>C#</td>
+                <td>1999</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>C</td>
+                <td>1972</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2" scope="row">Total de Linguagens</th><!--Colspan mescla colunas-->
+                <!--scope row identifica o final da tabela, só pode ser usado dentro de TH -->
+                <td><strong>10</strong></td>
+            </tr>
+            <tr>
+                <td colspan="3"><strong>Segundo Levantamento do GitHub no ultimo trimestre de 2020</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo Mídias</title>
+</head>
+<body>
+    <h1>Mídias</h1>
+    <h2>Audio</h2>
+    <h3>Simples</h3>
+    <audio src="midia/audio/musica.mp3" autoplay controls loop></audio>
+    <h2>Compatibilidade</h2>
+    <audio controls preload="metadata">
+        <source src="midia/audio/musica.mp3" type="audio/mpeg">
+        <source src="midia/audio/musica.ogg" type="audio/ogg">
+        <source src="midia/audio/musica.wav" type="audio/wav">
+        <p>Desculpa, tivemos um problema!</p>
+    </audio>
+
+    <h2>Vídeo</h2>
+    <h3>Local</h3>
+    <h4>Gato</h4>
+    <h5>MP4</h5>
+    <video src="midia/video/gato.mp4" poster="img/logoFundoAzulVGA.jpg" preload="metadata" controls loop></video> <!--video local-->
+
+    <h5>Compatibilidade</h5>
+    <video controls loop>
+        <source src="midia/video/gatinho.mp4" type="video/mp4">
+        <source src="midia/video/gatinho.m4v" type="video/m4v">
+        <source src="midia/video/gatinho.webm" type="video/webm">
+    </video>
+
+    <h3>Servidor</h3> <!--video externo-->
+    <h4>Youtube</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ysmzbi1P0HA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--ir no video no youtube, clicar em compartilhar/incorporar e copiar o link e colar aqui-->
+    <iframe src="https://www.youtube.com/embed/ysmzbi1P0HA" frameborder="0"></iframe>
+    <h4>Vimeo</h4>
+    <iframe src="https://player.vimeo.com/video/706644644?h=6772097ce6&loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/706644644">Heineken / Cheers to All Fans</a> from <a href="https://vimeo.com/alitwotimes">Ali Ali</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+    <h2>Incorporação</h2>
+    <h3>Páginas</h3>
+    <iframe src="texto.html" width="720" frameborder="0"></iframe>
+    <h3>PDF</h3>
+    <iframe src="../Aprendendo HTML/Arquivos/lorem/lorem.pdf" width="720" frameborder="0"></iframe>
+    <h3>Spotify</h3>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2agBDIr9MYDUducQPC1sFU?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+
+</body>
+</html>
