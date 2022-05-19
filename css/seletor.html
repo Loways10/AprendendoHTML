@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            font-family: sans-serif;
+        }
+        a{
+            text-decoration: none; /*decoração do texto*/
+        }
+        body{
+            width: 100%;
+            background-image: linear-gradient(320deg, #02eba5, #02eba5, #02eba5);
+        }
+        div{
+            width: 1000px;
+            background-color: aliceblue; 
+            margin: auto;           
+        }
+        h1, p {
+            padding: 10px;
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+        }
+        section{
+            background-color: blueviolet;
+        }
+        section h1{
+            text-align: center;
+            font-size: 20pt;
+        }
+        section p{
+            text-align: justify;
+        }
+        main{
+            width: 40%;
+            margin-top: 20px;
+            background-color: blanchedalmond;
+            margin-left: 30%; /*Se o width tem 40% sobra 60% da tela, dividindo por dois, 30% pra cada lado*/
+        }
+        main article h1{
+            text-align: center;
+            font-size: 20pt;
+        }
+        main article p{
+            text-align: justify;
+        }
+        section .img-quadrada{
+            width: 500px;
+            background-color: transparent;
+            margin: auto;
+        }
+        section .img-quadrada img{
+            width: 500px;
+            height: auto;  
+            box-shadow: 10px 10px 5px;          
+        }
+        section .img-arredondada{
+            width: 400px;
+            background-color: transparent;
+            margin: auto;
+        }
+        section .img-arredondada img{
+            border-radius: 50%;
+            width: 400px;
+            height: auto;
+        }
+        section nav{
+            text-align: center;
+            margin: 50px;
+
+        }
+        section nav a{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 18pt;
+            padding: 10px;
+            color: white;
+            margin: 100px;
+            
+        }
+        section nav a:hover{
+            color: blue;
+            font-size: 30pt;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Teste</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab explicabo, impedit officia voluptatibus tempora consequuntur consectetur enim in ex dignissimos, deleniti quaerat aliquid illum alias ut est praesentium tenetur nesciunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae corporis consectetur, ea quod voluptatem error inventore voluptas iste quis officiis libero optio, ex quidem labore laborum ad, temporibus velit repudiandae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quia sunt mollitia necessitatibus ex error dolore dolores, dolor expedita iure placeat ratione in sed maiores, vel voluptates veritatis optio nam.</p>
+    </div>
+    <section>
+        <h1>Teste Section </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tempore vero rem animi earum rerum, aliquam reprehenderit culpa cum! Voluptatum nemo ipsam dolores rerum, repudiandae blanditiis quam? Adipisci, consequatur id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, asperiores commodi. Omnis repudiandae quod ea nulla modi, ipsam voluptatum molestias libero recusandae optio. Sit ipsa, minima incidunt deleniti nostrum rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur similique repellendus. Fugiat, ipsa. Deleniti cum vero, sint numquam non facere enim nesciunt voluptatem facilis eius, atque explicabo a voluptas.</p>
+    </section>
+    <main>
+        <article>
+            <h1>Teste Article </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum tempore vero rem animi earum rerum, aliquam reprehenderit culpa cum! Voluptatum nemo ipsam dolores rerum, repudiandae blanditiis quam? Adipisci, consequatur id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, asperiores commodi. Omnis repudiandae quod ea nulla modi, ipsam voluptatum molestias libero recusandae optio. Sit ipsa, minima incidunt deleniti nostrum rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero consequuntur similique repellendus. Fugiat, ipsa. Deleniti cum vero, sint numquam non facere enim nesciunt voluptatem facilis eius, atque explicabo a voluptas.</p>
+        </article>
+    </main>
+    <section>
+        <div class="img-quadrada">
+            <img src="../img/logoFundoAzulVGA.jpg" alt="">
+        </div>
+        <div class="img-arredondada">
+            <img src="../img/logoFundoAzulVGA.jpg" alt="">
+        </div>
+    </section>
+    <section>
+        <nav>
+            <a href="#">Teste</a>
+            <a href="#">Teste</a>
+            <a href="#">Teste</a>
+            <a href="#">Teste</a>
+        </nav>
+    </section>
+</body>
+</html>
