@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* DIV CONTAINER*/
+        .container{
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap; /*QUEBRA DE LINHA*/ /* WRAP QUEBRA A LINHA AO MEXER NO TAMANHO DA TELA*/
+            justify-content: space-between; /*Alinhamento Horizontal*/
+            align-items: flex-start; /*Alinhamento Vertical*/
+            flex-direction: row;
+        } 
+        .box-container{
+            width: 300px;
+            color: white;
+            background-color: blue;
+            border: 2px solid red;
+        }
+        .box-container:nth-child(1){
+            order: 1;
+            background-color: blueviolet;
+            width: 65%;
+        }
+        .box-container:nth-child(2){
+            order: 3;
+            background-color: rosybrown;
+            width: 35%;
+        }
+        .box-container:nth-child(3){
+            order: 2;
+
+        }
+        .box-container:nth-child(4){
+            order: 0;
+        }
+        /*Menu*/
+        header{
+            background-color: #c3c3c3;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        header nav ul{
+            display: flex;
+            list-style: none; /*remover os pontos*/
+            align-items: center;
+        }
+        header nav ul li{
+            margin: 10px;
+            font-size: 18pt;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 16pt;
+            font-family: sans-serif;
+            transition: all ease-in 0.8s;/*efeito de transição*/
+            padding: 10px;
+            background-color: red;
+        }
+        a:hover{
+            opacity: 0.5;
+            background-color: blueviolet;
+            text-decoration: underline;
+            color: black;
+            margin-right: 20px;
+        }        
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <h2>Exemplo 1</h2>
+    <div>
+        <div class="box-container">VIDEO PRINCIPAL DO YOUTUBE</div>
+        <div class="box-container">VIDEO 2</div>
+        <div class="box-container">VIDEO 3</div>
+        <div class="box-container">VIDEO 4</div>
+        <div class="box-container">VIDEO 5</div>
+    </div>
+    <div class="container">
+        <div class="box-container">01</div>
+        <div class="box-container">
+            02
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eum ad voluptatem tempore magnam autem ullam eveniet temporibus ea, laborum odio alias beatae, velit nesciunt deserunt quas quasi similique laudantium.</p></div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eum ad voluptatem tempore magnam autem ullam eveniet temporibus ea, laborum odio alias beatae, velit nesciunt deserunt quas quasi similique laudantium.</p></div>
+        <div class="box-container">03</div>
+        <div class="box-container">04</div>
+    </div>
+    <div class="container">
+        <div class="box-container">05</div>
+        <div class="box-container">06</div>
+        <div class="box-container">07</div>
+        <div class="box-container">08</div>
+    </div>
+
+    <h2>Exemplo 02</h2>
+    <header>
+        <a href="">Logo</a>
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">CONTATO</a></li>
+                <li><a href="">SUPORTE</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
