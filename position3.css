@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.chiclete{
+    background-color: bisque;
+    text-align: center;
+    position: sticky;
+}
+.circle{
+    background-color: blue;
+    text-align: center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 50px;
+    right: 50px;
+    color: transparent;
+}
