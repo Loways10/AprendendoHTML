@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* BLOCK */
+.block{
+    margin-bottom: 40px;
+}
+.block .b{
+    width: 300px;
+    border: 2px solid red;
+    margin-bottom: 10px;
+}
+
+/* INLINE */
+/* NÃO HA QUEBRA DE LINHA, NÃO DA PRA MEXER EM HEIGHT E WIDTH*/
+.inline{
+    margin-bottom: 40px;
+}
+.inline h1{
+    text-align: center;
+}
+.inline .i{ /* */
+    display: inline;
+    width: 300px;
+    border: 1px solid brown;
+}
+
+
+/* INLINE - BLOCK */
+.inline-block{
+    margin-bottom: 40px;
+}
+.inline-block h1{
+    text-align: center;
+}
+.inline-block .ib{ /* */
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    border: 3px solid violet;
+    margin-bottom: 5px;
+}
+
+/* NONE */
+.none{
+    margin-bottom: 40px;
+}
+.none h1{
+    text-align: center;
+}
+.none .n{ /* */
+    display: none; /*display none desaparece com as caixas se for visibility invisible deixa invisivel*/
+    width: 300px;    
+    border: 3px solid aqua;
+    margin-bottom: 10px;
+}
+.none .s{
+    visibility: hidden;
+    height: 100px;
+}
+
+/* MAIN */
+main{
+    height: 400px;
+    background-color: cadetblue;
+}
+main h1{
+    text-align: center;
+}
+main ul{
+    display: flex;
+    list-style: none;
+}
+main ul li{
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+/* DROPDOWN */
+main ul li div{
+    position: absolute;
+    top: 20px;
+    display: none; /*junto com o display block abaixo*/
+    width: 400px;
+    height: 400px;
+}
+main ul li div img{
+    width: 100%;
+}
+main ul li div ul{
+    display: block;
+    margin-top: 300px;
+}
+main ul li:hover div{
+    display: block; /* junto com o display none acima*/
+    /* visibility: visible - também funciona*/
+}

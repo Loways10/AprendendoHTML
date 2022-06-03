@@ -1,0 +1,75 @@
+.list-title{
+    color: #919496;
+}
+footer{
+    background-color: black;
+    padding: 10px 20%;
+    height: 500px;
+}
+.f-1{
+    display: flex;
+    gap: 40px;
+    margin-top: 100px;    
+}
+
+.logo-bot{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.sociais ul{
+    display: flex;
+    margin-left: 100px;
+    gap: 12px;
+}
+.list-info{
+    width: 150px;
+}
+.list-title{
+    width: 150px;
+}
+.bottom-black .f-1 div ul li{
+    padding: 3px 0 15px;
+    font-size: 14px; 
+}
+.bottom-black .f-1 div ul li a:hover{
+    color: #1ed760;
+}
+.bottom-black .legal{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    
+}
+.bottom-black .legal .a1 ul{
+    display: flex;
+    font-size: 12px;
+    gap: 15px;
+}
+.bottom-black .legal .a1 ul li a{
+    color: rgb(83, 83, 83);
+}
+.bottom-black .legal .a1 ul li a:hover{
+    color: #1ed760;
+}
+.last-img{
+    width: 10px;
+    height: 10px;
+}
+.bottom-black .legal .a2 ul{
+    display: grid;
+    font-size: 12px;
+    text-align: right;
+}
+.bottom-black .legal .a2 ul li{
+    color: rgb(83, 83, 83);
+    padding-bottom: 10px;
+}
+.bottom-black .legal .a2 ul li a{
+    color: rgb(83, 83, 83);
+    
+}
+.bottom-black .legal .a2 ul li a:hover{
+    color: #1ed760;
+    
+}

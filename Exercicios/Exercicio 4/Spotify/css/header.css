@@ -1,0 +1,26 @@
+header{
+    background-color: black;
+}
+header section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header section nav{
+    display: flex;
+    gap: 30px;
+}
+header section nav div{
+    background-color: white;
+    width: 1px;
+}
+header section a{
+    font-weight: bold;
+    font-size: 15px;
+}
+header section a img{
+    width: 150px;
+}
+header section a:hover{
+    color: rgb(79, 173, 79);
+}
