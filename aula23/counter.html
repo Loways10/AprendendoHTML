@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER</title>
+    <style>
+        body{
+            counter-reset: incre; /* o pai tem que ter o counte reset para o contatdor funcionar */
+        }
+        main details > summary::before{
+            counter-increment: incre; /* nome incre pode ter qualquer outro nome do desejo */
+            content: counter(incre) " - ";
+        }
+        main details{
+            counter-reset: in;
+        }
+        main details p::before{
+            counter-increment: in;
+            content: counter(incre) " . " counter(in) " - ";
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <details>
+            <summary>PERGUNTA</summary>
+            <p>resposta</p>
+            <p>resposta</p>
+            <p>resposta</p>
+        </details>
+        <details>
+            <summary>PERGUNTA</summary>
+            <p>resposta</p>
+            <p>resposta</p>
+            <p>resposta</p>
+        </details>
+        <details>
+            <summary>PERGUNTA</summary>
+            <p>resposta</p>
+            <p>resposta</p>
+            <p>resposta</p>
+        </details>
+    </main>
+</body>
+</html>

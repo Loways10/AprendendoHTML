@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+</head>
+<body>
+    <h1>Audio</h1>
+    <audio src="midia/audio/musica.mp3" preload="metadata" controls autoplay loop></audio>
+
+    <audio>
+        <source src="midia/audio/musica.mp3" type="audio/mpeg"> <!--PRIMEIRO-->
+        <source src="midia/audio/musica.ogg" type="audio/ogg"> 
+        <source src="midia/audio/musica.wav" type="audio/wav"> 
+    </audio>
+
+    <video src="midia/video/gatinho.mp4" preload="metadata" controls loop></video>
+
+    <video controls>
+        <source src="midia/video/gatinho.mp4" type="image/"> <!--PRIMEIRO-->
+        <source src="midia/video/gatinho.m4v" type="image/">
+        <source src="midia/video/gatinho.webm" type="image/">
+    </video>
+
+    <iframe src="" frameborder="0"></iframe> <!-- VARIOS TIPOS DE ARQUIVO -->
+
+    <h1>TABELA</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">TITULO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td rowspan="3" colspan="2"></td><!-- Rowspan mescla linha / Colspan mescla coluna -->
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>Formulario</h1>
+    <form action="" method="post" target="_blank">
+        <fieldset> <!-- faz a borda da caixa -->
+            <legend>legenda da borda</legend>
+        </fieldset>
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+</html>

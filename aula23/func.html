@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCAO</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*ARTICLE*/
+        article{
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: auto;
+        }
+        article section{
+            width: 50%;
+            height: 300px;
+            background-color: blanchedalmond;
+            margin: 10px 10px;
+            width: calc(50% - 20px);      /*FUNCAO*/
+        }
+
+        /* MAIN */
+        main{
+            width: 500px;
+            width: max(70vw, 500px); /* PEGA O MAIOR VALOR*/ 
+            width: min(50%, 500px); /* PEGA O MAIOR VALOR*/ 
+            height: 500px;
+            background-color: aquamarine;
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, explicabo? Quod, fugiat tempora veritatis obcaecati quisquam dolorum! Distinctio facere maxime totam officiis maiores tempore reprehenderit excepturi, et quae modi impedit!</p>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, explicabo? Quod, fugiat tempora veritatis obcaecati quisquam dolorum! Distinctio facere maxime totam officiis maiores tempore reprehenderit excepturi, et quae modi impedit!</p>
+        </section>
+    </article>
+
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti accusamus cum, aliquid modi minima saepe. Animi aut necessitatibus perferendis sapiente facere exercitationem cum, ducimus eos aspernatur repellat eaque non illum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus nobis cupiditate ullam vel culpa facilis earum aperiam, corrupti quos quasi sit optio commodi suscipit! Ab odio laborum molestias obcaecati porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ratione voluptas est, commodi quas assumenda? Amet quidem ipsum hic nulla earum porro. Ea, sint corrupti sunt error inventore quae perferendis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis adipisci perspiciatis dolorum aperiam pariatur, quae alias nesciunt ea totam quod fuga officia, quos excepturi magni eius enim voluptate officiis. Vero? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam architecto quia rem aspernatur voluptatibus libero amet omnis recusandae, neque ab obcaecati reiciendis. Beatae, hic suscipit fugiat aliquam deleniti commodi adipisci.</p>
+    </main>
+</body>
+</html>

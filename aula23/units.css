@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ABSOLUTE */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section .abs{
+    text-align: center;
+    background-color: burlywood;
+    margin: 5px;
+}
+
+section .abs:nth-child(1){
+    width: 10cm;
+    height: 2cm;
+}
+section .abs:nth-child(2){
+    width: 10mm;
+    height: 2mm;
+}
+section .abs:nth-child(3){
+    width: 1in;
+    height: 2in;
+}
+section .abs:nth-child(4){
+    width: 10px;
+    height: 10px;
+}
+section .abs:nth-child(5){
+    width: 10pt;
+    height: 10pt;
+}
+section .abs:nth-child(6){
+    width: 10pc;
+    height: 10pc;
+}
+
+
+/* RELATIVE */
+:root{
+    font-size: 20px;
+}
+article{
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 5px;
+    font-size: 16pt;
+}
+
+article .rel{
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+}
+
+article .rel:nth-child(1){
+    font-size: 2em;
+}
+article .rel:nth-child(2){
+    font-size: 2rem; /* 16 px */
+}
+article .rel:nth-child(3){
+    font-size: 5ex; 
+}
+article .rel:nth-child(4){
+    font-size: 5ch; 
+}
+article .rel:nth-child(5){
+    font-size: 5vh; 
+}
+article .rel:nth-child(6){
+    font-size: 5vw; 
+}
+article .rel:nth-child(7){
+    font-size: 10vmax; 
+}
+article .rel:nth-child(8){
+    font-size: 10vmin; 
+}
+article .rel:nth-child(9){
+    font-size: 120%; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* MAIN */
+
+main{
+    font-size: 16px;
+}
+main div {
+    font-size: 1.5em;
+}
