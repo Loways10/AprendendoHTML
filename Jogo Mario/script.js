@@ -33,4 +33,4 @@ const loop = setInterval(() => {
     
 }, 10);
 
-document.addEventListener('keydown', jump); /* keydown é qualquer botão, logo quando apertar qualquer botão do teclado ele ativa a classe jump */ llll
+document.addEventListener('keydown', jump); /* keydown é qualquer botão, logo quando apertar qualquer botão do teclado ele ativa a classe jump */ 
